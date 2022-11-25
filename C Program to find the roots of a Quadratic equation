@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float a,b,c,descriminant,root1,root2;
+    printf("Enter coefficient of x^2\n");
+    scanf("%d",&a);
+    printf("Enter coefficient of x\n");
+    scanf("%d",&b);
+    printf("Enter constant term\n");
+    scanf("%d",&c);
+    
+    descriminant=sqrt(b*b-4*a*c);
+    if(descriminant >=0)
+    {
+        root1=(-b+descriminant)/(2.0*a);
+        root1=(-b-descriminant)/(2.0*a);
+        printf("first root1 %.2f\n",root1);
+        printf("Second root1 %.2f\n",root2);
+    }
+    else{
+        printf("Imaginary roots\n");
+    }
+
+    return 0;
+}
